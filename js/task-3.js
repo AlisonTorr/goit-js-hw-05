@@ -11,8 +11,8 @@ class Storage {
     this.items.push(item);
   }
 
-  removeItem(item) {
-    this.items = this.items.filter((item) => item !== item);
+  removeItem(itemName) {
+    this.items = this.items.filter((item) => item !== itemName);
   }
 }
 
