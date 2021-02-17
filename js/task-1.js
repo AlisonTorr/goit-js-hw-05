@@ -1,7 +1,7 @@
-const Account = function (login, password) {
+function Account(login, password) {
   this.login = login;
   this.password = password;
-};
+}
 
 Account.prototype.getInfo = function () {
   console.log(`login: ${this.login} , password: ${this.password}`);
