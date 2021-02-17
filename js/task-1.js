@@ -1,10 +1,10 @@
-function Account(login, password) {
+function Account({ login, password }) {
   this.login = login;
   this.password = password;
 }
 
 Account.prototype.getInfo = function () {
-  console.log(`login: ${this.login} , password: ${this.password}`);
+  return `login: ${this.login} , password: ${this.password}`;
 };
 
 console.log(Account.prototype.getInfo); // function
