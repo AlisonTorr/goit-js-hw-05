@@ -7,9 +7,9 @@ class Car {
     this._price = price;
   }
 
-  static getSpecs(car) {
+  static getSpecs() {
     console.log(
-      `maxSpeed: ${maxSpeed}, speed: ${speed}, isOn: ${isOn}, distance: ${distance},  price: ${price}`
+      `maxSpeed: ${this.maxSpeed}, speed: ${this.speed}, isOn: ${this.isOn}, distance: ${this.distance},  price: ${this.price}`
     );
   }
 
