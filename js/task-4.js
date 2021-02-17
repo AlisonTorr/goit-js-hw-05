@@ -8,15 +8,21 @@ class StringBuilder {
   }
 
   append(str) {
-    this._value.push(str);
+    const valuesArr = this._value.split("");
+    valuesArr.push(str);
+    return valuesArr;
   }
 
   prepend(str) {
-    this._value.shift(str);
+    const valuesArr = this._value.split("");
+    valuesArr.shift(str);
+    return valuesArr;
   }
 
   pad(str) {
-    this._value.shift(str).push(str);
+    const valuesArr = this._value.split("");
+    valuesArr.shift(str).push(str);
+    return valuesArr;
   }
 }
 
