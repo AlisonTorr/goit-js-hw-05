@@ -4,7 +4,7 @@ const Account = function (login, password) {
 };
 
 Account.prototype.getInfo = function (login, password) {
-  console.log(`login: ${this.login} , password: ${this.password}`);
+  console.log(`login: ${login} , password: ${password}`);
 };
 
 console.log(Account.prototype.getInfo); // function
