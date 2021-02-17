@@ -8,9 +8,9 @@ class StringBuilder {
   }
 
   append(str) {
-    const valuesArr = this._value.split("");
-    valuesArr.push(str);
-    return valuesArr;
+    this._value.split("").push(str);
+
+    return this._value;
   }
 
   prepend(str) {
