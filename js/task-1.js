@@ -3,8 +3,8 @@ const Account = function (login, password) {
   this.password = password;
 };
 
-Account.prototype.getInfo = function (login, password) {
-  console.log(`login: ${login} , password: ${password}`);
+Account.prototype.getInfo = function () {
+  console.log(`login: ${this.login} , password: ${this.password}`);
 };
 
 console.log(Account.prototype.getInfo); // function
