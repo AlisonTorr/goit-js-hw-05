@@ -21,7 +21,8 @@ class StringBuilder {
 
   pad(str) {
     const valuesArr = this._value.split("");
-    valuesArr.shift(str).push(str);
+    valuesArr.shift(str);
+    valuesArr.push(str);
     return valuesArr;
   }
 }
