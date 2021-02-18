@@ -8,23 +8,27 @@ class StringBuilder {
   }
 
   append(str) {
-    this._value.split("").push(str).join("");
+    this._value.split("").push(str);
+    this._value.join("");
 
     return this._value;
   }
 
   prepend(str) {
-    const valuesArr = this._value.split("").join("");
-    valuesArr.shift(str);
-    return valuesArr;
+    this._value.split("");
+    this._value.shift(str);
+    this._value.join("");
+
+    return this._value;
   }
 
   pad(str) {
-    let valuesArr = this._value.split("");
-    valuesArr.shift(str);
-    valuesArr.push(str);
-    valuesArr.join("");
-    return valuesArr;
+    this._value.split("");
+    this._value.shift(str);
+    this._value.push(str);
+    this._value.join("");
+
+    return this._value;
   }
 }
 
