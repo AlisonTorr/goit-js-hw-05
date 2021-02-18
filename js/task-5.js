@@ -27,18 +27,17 @@ class Car {
 
   turnOff() {
     this.isOn = false;
+    this.speed = 0;
   }
 
   accelerate(value) {
-    this.speed += value;
-    const totalSpeed = this.speed < this.maxSpeed ? this.speed : this.maxSpeed;
-    return totalSpeed;
+    const accSpeed = this.speed + value;
+    this.speed = accSpeed < this.maxSpeed ? accSpeed : this.speed;
   }
 
   decelerate(value) {
     const decSpeed = this.speed - value;
-    const totalSpeed = decSpeed > 0 ? decSpeed : this.speed;
-    return totalSpeed;
+    this.speed = decSpeed > 0 ? decSpeed : this.speed;
   }
 
   drive(hours) {
