@@ -32,12 +32,12 @@ class Car {
 
   accelerate(value) {
     const accSpeed = this.speed + value;
-    this.speed = accSpeed < this.maxSpeed ? accSpeed : this.speed;
+    this.speed = accSpeed <= this.maxSpeed ? accSpeed : this.speed;
   }
 
   decelerate(value) {
     const decSpeed = this.speed - value;
-    this.speed = decSpeed > 0 ? decSpeed : this.speed;
+    this.speed = decSpeed >= 0 ? decSpeed : this.speed;
   }
 
   drive(hours) {

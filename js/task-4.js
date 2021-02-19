@@ -8,25 +8,19 @@ class StringBuilder {
   }
 
   append(str) {
-    this._value.split("").push(str);
-    this._value.join("");
+    this._value = this._value + str;
 
     return this._value;
   }
 
   prepend(str) {
-    this._value.split("");
-    this._value.shift(str);
-    this._value.join("");
+    this._value = str + this._value;
 
     return this._value;
   }
 
   pad(str) {
-    this._value.split("");
-    this._value.shift(str);
-    this._value.push(str);
-    this._value.join("");
+    this._value = str + this._value + str;
 
     return this._value;
   }
